@@ -1,0 +1,1296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>G5-U05 · A Continent Before Colonization Synthesis | Assessment Edition · The Republic Gazette</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800;900&family=Special+Elite&family=Crimson+Text:wght@400;600;700&family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+<style>
+/* ═══════════════════════════════════════════════════════════════════════
+   G5 ASSESSMENT — A CONTINENT BEFORE COLONIZATION
+   Unit 5 Synthesis · Assessment Edition · Week 11 · ~45 Minutes
+   Design: The Republic Gazette Assessment Edition
+   ═══════════════════════════════════════════════════════════════════════ */
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  --gazette-navy: #1A2138;
+  --gazette-gold: #B8923E;
+  --paper-cream: #FAF3E0;
+  --paper-ivory: #FAF0E0;
+  --paper-manila: #E8DCC0;
+  --paper-newsprint: #F5F2EC;
+  --paper-edge: #D4C9A8;
+  --gazette-gold-dark: #8B6F2E;
+  --gazette-navy-dark: #0E1426;
+  --herald-red: #8B2D26;
+  --herald-red-bright: #B83D2C;
+  --herald-paper: #F2E8D8;
+  --herald-stain: #C4A672;
+  --editor-wood: #8B5A2E;
+  --editor-leather: #5C3D24;
+  --editor-brass: #C9A66B;
+  --editor-stamp: #5C7A4A;
+  --bg: #F5F1E8;
+  --surface: #FFFFFF;
+  --ink: #1A1F2E;
+  --ink-soft: #4A5568;
+  --ink-muted: #7A8398;
+  --border-soft: #E5DFD0;
+  --shadow: 0 2px 8px rgba(26,31,46,0.08);
+  --shadow-lift: 0 6px 20px rgba(26,31,46,0.12);
+}
+
+html, body {
+  background: var(--bg);
+  color: var(--ink);
+  font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  min-height: 100vh;
+  -webkit-font-smoothing: antialiased;
+}
+.serif { font-family: 'Playfair Display', Georgia, 'Times New Roman', serif; }
+.typewriter { font-family: 'Special Elite', 'Courier New', monospace; }
+.body-serif { font-family: 'Crimson Text', Georgia, serif; }
+
+/* ─── OAO HEADER ──────────────────────────────────────────────────────── */
+.oao-header {
+  background: var(--gazette-navy);
+  border-bottom: 6px solid var(--gazette-gold);
+  padding: 20px 28px 18px;
+  position: relative;
+  overflow: hidden;
+}
+.oao-header::after {
+  content: '';
+  position: absolute;
+  bottom: 6px; left: 0; right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, var(--gazette-gold), #E0B560, var(--gazette-gold));
+}
+.oao-header-inner {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  max-width: 980px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+}
+.oao-logo-wrap {
+  width: 52px; height: 52px;
+  border-radius: 50%;
+  background: #fff;
+  display: flex; align-items: center; justify-content: center;
+  flex-shrink: 0;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.25);
+}
+.oao-logo-img { width: 48px; height: 38px; }
+.oao-header-text { flex: 1; }
+.oao-org {
+  font-family: 'Inter', sans-serif;
+  font-size: 22px; color: #fff; font-weight: 800; line-height: 1.15;
+}
+.oao-sub {
+  font-family: 'Inter', sans-serif;
+  font-size: 11px; color: var(--gazette-gold); letter-spacing: 0.5px;
+}
+.oao-badge {
+  display: inline-flex; align-items: center; gap: 8px;
+  background: rgba(184,146,62,0.18);
+  border: 1.5px solid rgba(184,146,62,0.45);
+  border-radius: 28px;
+  padding: 6px 18px;
+  font-family: 'Inter', sans-serif;
+  font-size: 15px; color: #fff; font-weight: 800;
+}
+
+/* ─── SHELL ───────────────────────────────────────────────────────────── */
+.lesson-shell {
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 20px 18px 80px;
+}
+
+/* ─── MASTHEAD HERO ───────────────────────────────────────────────────── */
+.hero-newspaper {
+  position: relative;
+  background: radial-gradient(ellipse at top, rgba(184,146,62,0.08), transparent 60%),
+              linear-gradient(180deg, var(--paper-cream) 0%, var(--paper-ivory) 100%);
+  border: 1.5px solid var(--paper-edge);
+  border-radius: 14px;
+  overflow: hidden;
+  margin-bottom: 14px;
+  box-shadow: var(--shadow-lift);
+}
+.hero-newspaper::before {
+  content: '';
+  position: absolute; inset: 0;
+  background-image:
+    repeating-linear-gradient(0deg, rgba(184,146,62,0.025) 0px, rgba(184,146,62,0.025) 1px, transparent 1px, transparent 3px),
+    repeating-linear-gradient(90deg, rgba(0,0,0,0.012) 0px, rgba(0,0,0,0.012) 1px, transparent 1px, transparent 3px);
+  pointer-events: none;
+}
+.masthead-overlay {
+  position: relative;
+  padding: 14px 24px 10px;
+  border-bottom: 3px double var(--gazette-navy);
+  text-align: center;
+}
+.masthead-flags {
+  display: flex; justify-content: space-between; align-items: center;
+  font-family: 'Special Elite', 'Courier New', monospace;
+  font-size: 10px; color: var(--ink-soft);
+  text-transform: uppercase; letter-spacing: 1.5px;
+  margin-bottom: 6px;
+}
+.masthead-title {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 38px; font-weight: 900;
+  color: var(--gazette-navy);
+  letter-spacing: -0.5px;
+  line-height: 1;
+  margin-bottom: 6px;
+}
+.masthead-tagline {
+  font-family: 'Special Elite', 'Courier New', monospace;
+  font-size: 10px; color: var(--ink-muted);
+  text-transform: uppercase; letter-spacing: 2px;
+  margin-bottom: 4px;
+}
+.hero-illustration-wrap {
+  position: relative; overflow: hidden;
+  height: 200px;
+}
+.hero-headline-strip {
+  background: var(--gazette-navy);
+  padding: 12px 24px;
+  text-align: center;
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 17px; font-weight: 700;
+  color: #fff; letter-spacing: 0.3px;
+}
+.hero-headline-strip::before,
+.hero-headline-strip::after {
+  content: '★'; color: var(--gazette-gold); margin: 0 10px;
+}
+
+/* ─── ASSESSMENT STRIP ────────────────────────────────────────────────── */
+.assessment-strip {
+  display: flex; align-items: center; gap: 10px; flex-wrap: wrap;
+  background: var(--gazette-navy);
+  border: 2px solid var(--gazette-gold);
+  border-radius: 10px;
+  padding: 12px 20px;
+  margin-bottom: 14px;
+}
+.assessment-strip-label {
+  font-family: 'Special Elite', monospace;
+  font-size: 11px; text-transform: uppercase; letter-spacing: 2px;
+  color: var(--gazette-gold);
+}
+.assessment-strip-divider {
+  color: rgba(255,255,255,0.3); font-size: 14px;
+}
+.assessment-strip-item {
+  font-family: 'Inter', sans-serif;
+  font-size: 13px; color: #fff; font-weight: 600;
+}
+
+/* ─── SECTION HEADING ─────────────────────────────────────────────────── */
+.section-heading {
+  font-family: 'Playfair Display', serif;
+  font-size: 22px; font-weight: 800;
+  color: var(--gazette-navy);
+  border-bottom: 3px solid var(--gazette-gold);
+  padding-bottom: 6px;
+  margin: 28px 0 16px;
+  display: flex; align-items: center; gap: 10px;
+}
+.section-heading .pts {
+  font-family: 'Special Elite', monospace;
+  font-size: 12px; color: var(--gazette-gold-dark);
+  background: var(--paper-manila);
+  border: 1px solid var(--paper-edge);
+  border-radius: 6px; padding: 2px 8px;
+  text-transform: uppercase; letter-spacing: 1px;
+}
+
+/* ─── INSTRUCTIONS BLOCK ──────────────────────────────────────────────── */
+.instructions-block {
+  background: var(--paper-cream);
+  border: 1.5px solid var(--paper-edge);
+  border-left: 5px solid var(--gazette-gold);
+  border-radius: 10px;
+  padding: 18px 22px;
+  margin-bottom: 14px;
+}
+.instructions-block h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: 16px; font-weight: 800;
+  color: var(--gazette-navy); margin-bottom: 8px;
+}
+.instructions-block p,
+.instructions-block li {
+  font-family: 'Crimson Text', serif;
+  font-size: 16px; color: var(--ink-soft); line-height: 1.55;
+}
+.instructions-block ul { padding-left: 20px; margin-top: 6px; }
+.instructions-block li { margin-bottom: 4px; }
+.units-note {
+  display: inline-block;
+  background: var(--gazette-navy);
+  color: var(--gazette-gold);
+  font-family: 'Special Elite', monospace;
+  font-size: 12px; letter-spacing: 1px;
+  padding: 3px 12px; border-radius: 20px;
+  margin-top: 8px;
+}
+
+/* ─── WORD BANK ───────────────────────────────────────────────────────── */
+.word-bank-box {
+  background: var(--paper-cream);
+  border: 2px dashed var(--gazette-gold-dark);
+  border-radius: 10px;
+  padding: 16px 20px;
+  margin-bottom: 18px;
+}
+.word-bank-label {
+  font-family: 'Special Elite', monospace;
+  font-size: 11px; text-transform: uppercase; letter-spacing: 2px;
+  color: var(--gazette-gold-dark);
+  margin-bottom: 10px; display: block;
+}
+.word-bank-chips {
+  display: flex; flex-wrap: wrap; gap: 8px;
+}
+.word-chip {
+  font-family: 'Special Elite', monospace;
+  font-size: 13px; color: var(--gazette-navy);
+  background: var(--paper-ivory);
+  border: 1.5px solid var(--paper-edge);
+  border-radius: 20px;
+  padding: 4px 14px;
+  cursor: default; user-select: all;
+  transition: background 0.2s;
+}
+.word-chip:hover { background: var(--paper-manila); }
+
+/* ─── FILL-IN-THE-BLANK ───────────────────────────────────────────────── */
+.fill-questions { display: flex; flex-direction: column; gap: 16px; }
+.fill-item {
+  background: var(--surface);
+  border: 1.5px solid var(--border-soft);
+  border-radius: 10px;
+  padding: 14px 18px;
+}
+.fill-item-num {
+  font-family: 'Special Elite', monospace;
+  font-size: 11px; text-transform: uppercase; letter-spacing: 1.5px;
+  color: var(--gazette-gold-dark); margin-bottom: 6px;
+}
+.fill-sentence {
+  font-family: 'Crimson Text', serif;
+  font-size: 17px; color: var(--ink); line-height: 1.6;
+  display: flex; align-items: baseline; flex-wrap: wrap; gap: 4px;
+}
+.fill-blank {
+  display: inline-block;
+  border: none; border-bottom: 2px solid var(--gazette-navy);
+  background: transparent;
+  font-family: 'Special Elite', monospace;
+  font-size: 15px; color: var(--gazette-navy);
+  padding: 2px 6px;
+  min-width: 160px;
+  outline: none;
+  transition: border-color 0.2s;
+}
+.fill-blank:focus { border-bottom-color: var(--gazette-gold); }
+
+/* ─── SOURCE CARDS ────────────────────────────────────────────────────── */
+.two-sources-container {
+  border: 1.5px solid var(--gazette-navy);
+  border-radius: 12px;
+  overflow: hidden;
+  margin-bottom: 18px;
+  box-shadow: var(--shadow);
+}
+.two-sources-header {
+  background: var(--gazette-navy);
+  padding: 12px 20px;
+  font-family: 'Special Elite', monospace;
+  font-size: 13px; color: #fff; letter-spacing: 1.5px;
+  text-transform: uppercase;
+}
+.two-sources-body {
+  display: grid; grid-template-columns: 1fr 1fr; gap: 0;
+  background: var(--paper-newsprint);
+}
+@media (max-width: 640px) {
+  .two-sources-body { grid-template-columns: 1fr; }
+}
+.source-card {
+  padding: 18px 20px;
+  border-right: 1px solid var(--paper-edge);
+}
+.source-card:last-child { border-right: none; }
+.source-card-a { border-left: 5px solid var(--gazette-gold); }
+.source-card-b { border-left: 5px solid #4A6FB5; }
+.source-card-label {
+  font-family: 'Special Elite', monospace;
+  font-size: 11px; text-transform: uppercase; letter-spacing: 2px;
+  color: var(--ink-muted); margin-bottom: 8px; display: block;
+}
+.source-card-a .source-card-label { color: var(--gazette-gold-dark); }
+.source-card-b .source-card-label { color: #4A6FB5; }
+.source-card-text {
+  font-family: 'Crimson Text', serif;
+  font-size: 16px; color: var(--ink); line-height: 1.6;
+  font-style: italic;
+}
+.source-card-text::before { content: '\201C'; }
+.source-card-text::after { content: '\201D'; }
+
+/* ─── TEXTAREA QUESTIONS ──────────────────────────────────────────────── */
+.question-block {
+  background: var(--surface);
+  border: 1.5px solid var(--border-soft);
+  border-radius: 10px;
+  padding: 16px 20px;
+  margin-bottom: 14px;
+}
+.question-block + .question-block { margin-top: 0; }
+.question-label {
+  font-family: 'Special Elite', monospace;
+  font-size: 11px; text-transform: uppercase; letter-spacing: 2px;
+  color: var(--gazette-gold-dark); margin-bottom: 6px; display: block;
+}
+.question-prompt {
+  font-family: 'Crimson Text', serif;
+  font-size: 17px; color: var(--ink); line-height: 1.55;
+  margin-bottom: 10px;
+}
+.question-prompt strong { color: var(--gazette-navy); }
+.response-textarea {
+  width: 100%;
+  background: var(--paper-cream);
+  border: 1.5px solid var(--paper-edge);
+  border-radius: 8px;
+  padding: 12px 14px;
+  font-family: 'Crimson Text', serif;
+  font-size: 16px; color: var(--ink); line-height: 1.6;
+  resize: vertical;
+  outline: none;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+.response-textarea:focus {
+  border-color: var(--gazette-navy);
+  box-shadow: 0 0 0 3px rgba(26,33,56,0.08);
+}
+
+/* ─── HISTORIAN'S CLAIM (PART 3) ──────────────────────────────────────── */
+.herald-clipping-wrap {
+  margin-bottom: 16px;
+  display: flex; justify-content: center;
+}
+.herald-clipping {
+  position: relative;
+  background: var(--herald-paper);
+  border: 1.5px solid var(--herald-stain);
+  border-radius: 3px;
+  padding: 18px 22px 22px;
+  max-width: 600px; width: 100%;
+  transform: rotate(-1.5deg);
+  box-shadow: 3px 4px 14px rgba(0,0,0,0.18);
+  clip-path: polygon(
+    0% 1%, 1.5% 0%, 3% 1.2%, 5% 0.3%, 7% 1.5%, 9% 0%, 12% 1%, 15% 0.4%, 18% 1.2%, 22% 0%,
+    25% 1%, 30% 0.3%, 35% 1.2%, 40% 0%, 45% 1%, 50% 0.4%, 55% 1.2%, 60% 0%,
+    65% 1%, 70% 0.4%, 75% 1.2%, 80% 0%, 85% 1%, 90% 0.4%, 95% 1.2%, 100% 0%,
+    100% 99%, 98% 100%, 96% 99.2%, 93% 100%, 90% 99%, 85% 100%, 80% 99.2%,
+    75% 100%, 70% 99%, 65% 100%, 60% 99.2%, 55% 100%, 50% 99%, 45% 100%,
+    40% 99.2%, 35% 100%, 30% 99%, 25% 100%, 20% 99.2%, 15% 100%, 10% 99%,
+    5% 100%, 2% 99.2%, 0% 100%
+  );
+}
+.herald-pin {
+  position: absolute; top: -10px; left: 50%; transform: translateX(-50%);
+  width: 14px; height: 14px; background: var(--herald-red-bright);
+  border-radius: 50%; border: 2px solid var(--herald-red);
+  box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+  z-index: 2;
+}
+.herald-masthead {
+  font-family: 'Playfair Display', serif;
+  font-size: 18px; font-weight: 700; font-style: italic;
+  color: var(--herald-red); text-align: center; margin-bottom: 2px;
+}
+.herald-tagline {
+  font-family: 'Special Elite', monospace;
+  font-size: 9px; text-transform: uppercase; letter-spacing: 2px;
+  color: var(--herald-stain); text-align: center; margin-bottom: 10px;
+}
+.herald-rule {
+  border: none; border-top: 2px solid var(--herald-stain);
+  margin: 8px 0;
+}
+.herald-headline {
+  font-family: 'Playfair Display', serif;
+  font-size: 15px; font-weight: 900;
+  color: var(--ink); text-align: center; line-height: 1.3;
+  margin-bottom: 8px;
+}
+.herald-claim {
+  font-family: 'Crimson Text', serif;
+  font-size: 14px; color: var(--ink-soft); line-height: 1.5;
+  font-style: italic; text-align: center;
+  margin-bottom: 10px;
+}
+.herald-byline {
+  font-family: 'Special Elite', monospace;
+  font-size: 10px; color: var(--herald-stain); text-align: center;
+}
+.herald-stamp {
+  position: absolute; bottom: 12px; right: 12px;
+  background: transparent;
+  border: 3px solid var(--herald-red-bright);
+  border-radius: 4px;
+  padding: 3px 8px;
+  font-family: 'Special Elite', monospace;
+  font-size: 9px; text-transform: uppercase; letter-spacing: 2px;
+  color: var(--herald-red-bright);
+  transform: rotate(-8deg);
+  opacity: 0.85;
+}
+.herald-task {
+  font-family: 'Crimson Text', serif;
+  font-size: 15px; color: var(--ink-soft);
+  font-style: italic; text-align: center;
+  margin-bottom: 14px;
+}
+
+/* ─── VIRTUE LENS (PART 4) ────────────────────────────────────────────── */
+.virtue-chip {
+  display: inline-flex; align-items: center; gap: 8px;
+  background: var(--editor-stamp);
+  color: #fff;
+  font-family: 'Special Elite', monospace;
+  font-size: 13px; letter-spacing: 1px;
+  padding: 6px 18px; border-radius: 24px;
+  margin-bottom: 14px;
+  box-shadow: 0 2px 6px rgba(92,122,74,0.3);
+}
+.virtue-chip::before { content: '★'; color: #b8e8a0; }
+
+/* ─── GATHERED ANSWERS ────────────────────────────────────────────────── */
+.gathered-card {
+  background: var(--surface);
+  border: 1.5px solid var(--gazette-navy);
+  border-radius: 12px;
+  overflow: hidden;
+  margin: 28px 0 14px;
+  box-shadow: var(--shadow-lift);
+}
+.gathered-header {
+  background: var(--gazette-navy);
+  padding: 14px 20px;
+  font-family: 'Playfair Display', serif;
+  font-size: 17px; font-weight: 700; color: #fff;
+  display: flex; align-items: center; gap: 10px;
+}
+.gathered-body { padding: 18px 20px; }
+.gathered-output {
+  width: 100%;
+  background: var(--paper-newsprint);
+  border: 1.5px solid var(--border-soft);
+  border-radius: 8px;
+  padding: 14px 16px;
+  font-family: 'Crimson Text', serif;
+  font-size: 15px; color: var(--ink); line-height: 1.6;
+  min-height: 180px; resize: vertical; outline: none;
+}
+.copy-btn {
+  display: inline-flex; align-items: center; gap: 8px;
+  background: var(--editor-stamp);
+  color: #fff; border: none; border-radius: 8px;
+  padding: 11px 22px; margin-top: 12px;
+  font-family: 'Inter', sans-serif;
+  font-size: 14px; font-weight: 700; cursor: pointer;
+  transition: background 0.2s, transform 0.1s;
+}
+.copy-btn:hover { background: #4a6840; transform: translateY(-1px); }
+.copy-btn:active { transform: translateY(0); }
+.copy-confirm {
+  display: none;
+  font-family: 'Special Elite', monospace;
+  font-size: 12px; color: var(--editor-stamp);
+  margin-left: 12px; vertical-align: middle;
+}
+
+/* ─── CHECKLIST ───────────────────────────────────────────────────────── */
+.checklist-card {
+  background: var(--paper-cream);
+  border: 1.5px solid var(--paper-edge);
+  border-radius: 10px;
+  padding: 18px 22px;
+  margin-bottom: 14px;
+}
+.checklist-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 16px; font-weight: 800; color: var(--gazette-navy);
+  margin-bottom: 12px;
+}
+.checklist-items { display: flex; flex-direction: column; gap: 10px; }
+.checklist-item {
+  display: flex; align-items: flex-start; gap: 10px;
+  font-family: 'Crimson Text', serif;
+  font-size: 16px; color: var(--ink); line-height: 1.4; cursor: pointer;
+}
+.checklist-item input[type="checkbox"] {
+  width: 18px; height: 18px; margin-top: 2px;
+  accent-color: var(--gazette-navy); flex-shrink: 0; cursor: pointer;
+}
+
+/* ─── RUBRIC ──────────────────────────────────────────────────────────── */
+.rubric-wrap { margin-bottom: 14px; }
+.rubric-toggle-btn {
+  width: 100%;
+  display: flex; align-items: center; justify-content: space-between;
+  background: var(--gazette-navy);
+  color: #fff; border: none; border-radius: 10px;
+  padding: 13px 20px; cursor: pointer;
+  font-family: 'Special Elite', monospace;
+  font-size: 13px; letter-spacing: 1px;
+  transition: background 0.2s;
+}
+.rubric-toggle-btn:hover { background: var(--gazette-navy-dark); }
+.rubric-toggle-icon { font-size: 14px; transition: transform 0.3s; }
+.rubric-toggle-btn.open .rubric-toggle-icon { transform: rotate(180deg); }
+.rubric-body {
+  display: none;
+  background: var(--surface);
+  border: 1.5px solid var(--gazette-navy);
+  border-top: none;
+  border-radius: 0 0 10px 10px;
+  overflow: hidden;
+}
+.rubric-body.open { display: block; }
+.rubric-table {
+  width: 100%; border-collapse: collapse;
+  font-family: 'Crimson Text', serif;
+}
+.rubric-table th {
+  background: var(--paper-manila);
+  font-family: 'Special Elite', monospace;
+  font-size: 11px; text-transform: uppercase; letter-spacing: 1.5px;
+  color: var(--gazette-navy);
+  padding: 10px 14px; text-align: left;
+  border-bottom: 2px solid var(--paper-edge);
+}
+.rubric-table th:first-child { border-right: 2px solid var(--paper-edge); }
+.rubric-table td {
+  padding: 10px 14px;
+  font-size: 15px; color: var(--ink-soft);
+  border-bottom: 1px solid var(--border-soft);
+  vertical-align: top;
+}
+.rubric-table tr:last-child td { border-bottom: none; }
+.rubric-table td:first-child {
+  font-family: 'Playfair Display', serif;
+  font-size: 14px; font-weight: 700;
+  color: var(--gazette-navy);
+  background: var(--paper-cream);
+  border-right: 2px solid var(--paper-edge);
+  min-width: 160px;
+}
+.rubric-table tr:nth-child(even) td:not(:first-child) { background: #FAFAF6; }
+.rubric-pts-header { text-align: center; font-size: 12px; color: var(--gazette-gold-dark); }
+.rubric-pts-label {
+  display: inline-block;
+  background: var(--gazette-gold);
+  color: #fff; font-family: 'Special Elite', monospace;
+  font-size: 10px; padding: 1px 8px; border-radius: 10px;
+  margin-left: 4px;
+}
+
+/* ─── FOOTER ──────────────────────────────────────────────────────────── */
+.oao-footer {
+  background: var(--gazette-navy);
+  border-top: 4px solid var(--gazette-gold);
+  padding: 18px 28px; text-align: center;
+}
+.oao-footer-text {
+  font-family: 'Inter', sans-serif;
+  font-size: 13px; color: rgba(255,255,255,0.7);
+}
+.oao-footer-text span { color: var(--gazette-gold); font-weight: 700; }
+
+/* ─── UTILITY ─────────────────────────────────────────────────────────── */
+.divider-rule {
+  border: none; border-top: 1px solid var(--paper-edge);
+  margin: 24px 0;
+}
+.part-badge {
+  display: inline-flex; align-items: center; gap: 6px;
+  background: var(--gazette-gold);
+  color: var(--gazette-navy-dark);
+  font-family: 'Special Elite', monospace;
+  font-size: 11px; letter-spacing: 2px; text-transform: uppercase;
+  padding: 3px 12px; border-radius: 20px; font-weight: 700;
+  margin-bottom: 6px;
+}
+
+@media (max-width: 620px) {
+  .masthead-title { font-size: 26px; }
+  .oao-org { font-size: 18px; }
+  .fill-blank { min-width: 120px; }
+  .rubric-table { font-size: 13px; }
+  .rubric-table td { padding: 8px 10px; }
+  .rubric-table td:first-child { min-width: 110px; }
+}
+</style>
+</head>
+<body>
+
+<!-- ═══════════════════════════════════════════════════════════════════
+     OAO HEADER
+     ═══════════════════════════════════════════════════════════════════ -->
+<header class="oao-header">
+  <div class="oao-header-inner">
+    <div class="oao-logo-wrap">
+      <img src="https://raw.githubusercontent.com/optimaondemand/optima-assets/eeb0b335630058906d52f478028361d352253a93/images/Optima%20Final%20Circle%20-%20Owl%20Only.png" alt="Optima Academy Owl" class="oao-logo-img">
+    </div>
+    <div class="oao-header-text">
+      <div class="oao-org">Optima Academy Online</div>
+      <div class="oao-sub">An Education Experience Company</div>
+    </div>
+    <div class="oao-badge">🗞️ Assessment G5-U05</div>
+  </div>
+</header>
+
+<!-- ═══════════════════════════════════════════════════════════════════
+     MASTHEAD HERO
+     ═══════════════════════════════════════════════════════════════════ -->
+<div class="lesson-shell">
+
+  <div class="hero-newspaper">
+    <div class="masthead-overlay">
+      <div class="masthead-flags">
+        <span class="typewriter">★ Vol. 1 · Assessment Edition ★</span>
+        <span class="typewriter">★ Special Synthesis Issue ★</span>
+      </div>
+      <div class="masthead-title serif">The Republic Gazette · Assessment Edition</div>
+      <div class="masthead-tagline">Honest Reporting · Evidence First · For Every Citizen</div>
+    </div>
+
+    <!-- Hero SVG: Historian's desk scene with parchment, quill, magnifying glass, mound motifs -->
+    <div class="hero-illustration-wrap">
+      <svg viewBox="0 0 920 200" xmlns="http://www.w3.org/2000/svg" style="width:100%;height:200px;display:block;">
+        <defs>
+          <radialGradient id="skyGrad" cx="50%" cy="0%" r="70%">
+            <stop offset="0%" stop-color="#FAF3E0"/>
+            <stop offset="100%" stop-color="#E8DCC0"/>
+          </radialGradient>
+          <filter id="softShadow">
+            <feDropShadow dx="2" dy="2" stdDeviation="3" flood-color="#00000030"/>
+          </filter>
+          <animateTransform id="floatAnim" attributeName="transform" type="translate" values="0,0;0,-6;0,0" dur="4s" repeatCount="indefinite"/>
+        </defs>
+
+        <!-- Background sky/paper -->
+        <rect width="920" height="200" fill="url(#skyGrad)"/>
+
+        <!-- Subtle horizontal rule lines (paper texture) -->
+        <g stroke="#D4C9A8" stroke-width="0.5" opacity="0.5">
+          <line x1="0" y1="40" x2="920" y2="40"/>
+          <line x1="0" y1="80" x2="920" y2="80"/>
+          <line x1="0" y1="120" x2="920" y2="120"/>
+          <line x1="0" y1="160" x2="920" y2="160"/>
+        </g>
+
+        <!-- Mound shape (Cahokia) — left side -->
+        <ellipse cx="120" cy="175" rx="90" ry="28" fill="#8B7355" opacity="0.7"/>
+        <ellipse cx="120" cy="158" rx="55" ry="18" fill="#9B8B6B" opacity="0.75"/>
+        <ellipse cx="120" cy="148" rx="25" ry="10" fill="#A89870" opacity="0.8"/>
+        <!-- Tiny building on mound -->
+        <rect x="112" y="135" width="16" height="13" fill="#7A6548" rx="1"/>
+        <polygon points="108,135 120,125 132,135" fill="#6B5840"/>
+
+        <!-- Sun / compass rose — upper center-left -->
+        <g transform="translate(300, 60)">
+          <circle cx="0" cy="0" r="20" fill="#E8C870" opacity="0.9"/>
+          <circle cx="0" cy="0" r="14" fill="#F0D878" opacity="0.95"/>
+          <!-- compass rays -->
+          <g stroke="#B8923E" stroke-width="2" opacity="0.7">
+            <line x1="0" y1="-24" x2="0" y2="-20"/>
+            <line x1="0" y1="20" x2="0" y2="24"/>
+            <line x1="-24" y1="0" x2="-20" y2="0"/>
+            <line x1="20" y1="0" x2="24" y2="0"/>
+            <line x1="-17" y1="-17" x2="-14" y2="-14"/>
+            <line x1="14" y1="-14" x2="17" y2="-17"/>
+            <line x1="-17" y1="17" x2="-14" y2="14"/>
+            <line x1="14" y1="14" x2="17" y2="17"/>
+          </g>
+        </g>
+
+        <!-- Floating parchment document — center -->
+        <g filter="url(#softShadow)">
+          <animateTransform attributeName="transform" type="translate" values="0,0;0,-5;0,0" dur="5s" repeatCount="indefinite" additive="sum"/>
+          <rect x="390" y="30" width="140" height="150" rx="4" fill="#F2E8D0" stroke="#C4A672" stroke-width="1.5"/>
+          <!-- Torn top edge suggestion -->
+          <path d="M390,40 Q400,34 410,40 Q420,34 430,40 Q440,34 450,40 Q460,34 470,40 Q480,34 490,40 Q500,34 510,40 Q520,34 530,40" stroke="#C4A672" stroke-width="1" fill="none" opacity="0.7"/>
+          <!-- Horizontal lines (text sim) -->
+          <g stroke="#B8923E" stroke-width="1" opacity="0.25">
+            <line x1="404" y1="55" x2="516" y2="55"/>
+            <line x1="404" y1="68" x2="516" y2="68"/>
+            <line x1="404" y1="81" x2="516" y2="81"/>
+            <line x1="404" y1="94" x2="516" y2="94"/>
+            <line x1="404" y1="107" x2="500" y2="107"/>
+            <line x1="404" y1="120" x2="516" y2="120"/>
+            <line x1="404" y1="133" x2="510" y2="133"/>
+            <line x1="404" y1="146" x2="516" y2="146"/>
+          </g>
+          <!-- Map outline on parchment (simplified North America) -->
+          <path d="M420,60 Q430,50 445,52 Q460,48 470,58 Q478,65 475,80 Q473,95 465,105 Q455,115 445,118 Q432,120 422,110 Q414,98 415,85 Q416,72 420,60Z"
+            fill="none" stroke="#8B6F2E" stroke-width="1.5" opacity="0.5"/>
+        </g>
+
+        <!-- Quill — right of center -->
+        <g transform="translate(560, 40) rotate(25)">
+          <path d="M0,0 Q-4,20 0,50 Q4,80 2,120" stroke="#8B7355" stroke-width="1.5" fill="none"/>
+          <!-- Feather shape -->
+          <path d="M0,0 C-20,-5 -30,10 -15,25 C-10,30 -5,40 0,50 C5,40 8,30 10,22 C20,8 12,-6 0,0Z"
+            fill="#F5F0E0" stroke="#C4A672" stroke-width="1" opacity="0.9"/>
+          <path d="M0,0 C-10,5 -12,18 -7,28 C-4,33 -2,42 0,50"
+            stroke="#D4C9A8" stroke-width="0.8" fill="none"/>
+          <!-- Nib -->
+          <path d="M-2,120 L0,130 L2,120 L0,115Z" fill="#4A3520"/>
+        </g>
+
+        <!-- Magnifying glass — right side -->
+        <g transform="translate(700, 80)">
+          <animateTransform attributeName="transform" type="translate" values="700,80;700,74;700,80" dur="3.5s" repeatCount="indefinite" additive="replace"/>
+          <circle cx="0" cy="0" r="32" fill="#E8DCC0" stroke="#8B5A2E" stroke-width="3" opacity="0.8"/>
+          <circle cx="0" cy="0" r="26" fill="none" stroke="rgba(184,146,62,0.3)" stroke-width="1"/>
+          <!-- Globe/map inside lens -->
+          <circle cx="0" cy="0" r="24" fill="#D8EDF5" opacity="0.6"/>
+          <ellipse cx="0" cy="0" rx="24" ry="12" fill="none" stroke="#5C9ABF" stroke-width="0.8" opacity="0.5"/>
+          <line x1="-24" y1="0" x2="24" y2="0" stroke="#5C9ABF" stroke-width="0.8" opacity="0.5"/>
+          <!-- handle -->
+          <line x1="22" y1="22" x2="46" y2="50" stroke="#8B5A2E" stroke-width="4" stroke-linecap="round"/>
+        </g>
+
+        <!-- Small Tenochtitlan island grid — far right -->
+        <g transform="translate(820, 100)" opacity="0.65">
+          <!-- water -->
+          <ellipse cx="0" cy="0" rx="52" ry="35" fill="#7BAFC8" opacity="0.5"/>
+          <!-- island blocks -->
+          <rect x="-20" y="-15" width="40" height="30" fill="#C4B090" rx="2"/>
+          <g stroke="#8B7355" stroke-width="0.8" fill="none" opacity="0.6">
+            <line x1="-20" y1="-5" x2="20" y2="-5"/>
+            <line x1="-20" y1="5" x2="20" y2="5"/>
+            <line x1="-6" y1="-15" x2="-6" y2="15"/>
+            <line x1="6" y1="-15" x2="6" y2="15"/>
+          </g>
+          <!-- Small pyramid -->
+          <polygon points="0,-15 -8,-5 8,-5" fill="#9B8B6B"/>
+          <!-- causeways -->
+          <rect x="-50" y="-3" width="30" height="6" fill="#A89870" rx="1" opacity="0.7"/>
+          <rect x="20" y="-3" width="32" height="6" fill="#A89870" rx="1" opacity="0.7"/>
+        </g>
+
+        <!-- Floating small papers -->
+        <g opacity="0.55">
+          <g>
+            <animateTransform attributeName="transform" type="translate" values="160,50;163,43;160,50" dur="6s" repeatCount="indefinite" additive="replace"/>
+            <rect x="0" y="0" width="32" height="42" rx="2" fill="#F5F0E0" stroke="#D4C9A8" stroke-width="1" transform="rotate(12)"/>
+            <line x1="4" y1="8" x2="26" y2="8" stroke="#B8923E" stroke-width="0.8" opacity="0.4"/>
+            <line x1="4" y1="14" x2="22" y2="14" stroke="#B8923E" stroke-width="0.8" opacity="0.4"/>
+            <line x1="4" y1="20" x2="25" y2="20" stroke="#B8923E" stroke-width="0.8" opacity="0.4"/>
+          </g>
+          <g>
+            <animateTransform attributeName="transform" type="translate" values="220,30;217,36;220,30" dur="7s" repeatCount="indefinite" additive="replace"/>
+            <rect x="0" y="0" width="28" height="36" rx="2" fill="#F0EAD8" stroke="#C4B090" stroke-width="1" transform="rotate(-7)"/>
+            <line x1="4" y1="8" x2="22" y2="8" stroke="#8B6F2E" stroke-width="0.8" opacity="0.3"/>
+            <line x1="4" y1="14" x2="18" y2="14" stroke="#8B6F2E" stroke-width="0.8" opacity="0.3"/>
+          </g>
+        </g>
+
+        <!-- Subtle gold star accents -->
+        <g fill="#B8923E" opacity="0.3">
+          <polygon points="350,20 352,16 354,20 358,20 355,23 356,27 352,24 348,27 349,23 346,20" transform="scale(0.7)"/>
+          <polygon points="650,25 652,20 654,25 659,25 655,28 657,33 652,30 647,33 649,28 645,25" transform="scale(0.6) translate(400,0)"/>
+        </g>
+      </svg>
+    </div>
+
+    <div class="hero-headline-strip serif">
+      G5-U05 · A Continent Before Colonization Synthesis
+    </div>
+  </div><!-- /.hero-newspaper -->
+
+  <!-- ═════════════════════════════════════════════════════════════════
+       ASSESSMENT STRIP
+       ═════════════════════════════════════════════════════════════════ -->
+  <div class="assessment-strip">
+    <span class="assessment-strip-label">Unit: Synthesis 1</span>
+    <span class="assessment-strip-divider">|</span>
+    <span class="assessment-strip-item">Peoples, Places &amp; Evidence</span>
+    <span class="assessment-strip-divider">|</span>
+    <span class="assessment-strip-item">Week 11</span>
+    <span class="assessment-strip-divider">|</span>
+    <span class="assessment-strip-item">~45 Minutes</span>
+    <span class="assessment-strip-divider">|</span>
+    <span class="assessment-strip-item">Virtue Focus: Honesty &amp; Courtesy</span>
+  </div>
+
+  <!-- ═════════════════════════════════════════════════════════════════
+       INSTRUCTIONS
+       ═════════════════════════════════════════════════════════════════ -->
+  <div class="instructions-block">
+    <h3>📋 Instructions for the Junior Editor</h3>
+    <p>This assessment gives you a chance to show everything you know about the peoples, places, and civilizations of North and South America before European colonization. Read each part carefully. Answer in complete sentences whenever you write a response.</p>
+    <ul>
+      <li>Use your own words — show what <em>you</em> understand.</li>
+      <li>For fill-in-the-blank, choose the correct word from the Word Bank.</li>
+      <li>For written responses, include specific evidence and explain your reasoning.</li>
+      <li>When you finish, use the <strong>Gathered Answers</strong> section to copy and submit your work to Canvas.</li>
+    </ul>
+    <span class="units-note">★ This assessment draws from Units 3 AND 4. ★</span>
+  </div>
+
+  <!-- ═════════════════════════════════════════════════════════════════
+       PART 1 — KNOWLEDGE CHECK
+       ═════════════════════════════════════════════════════════════════ -->
+  <div class="section-heading serif">
+    <span class="part-badge">Part 1</span>
+    Knowledge Check
+    <span class="pts">10 pts</span>
+  </div>
+
+  <div class="word-bank-box">
+    <span class="word-bank-label">📚 Word Bank — Use these terms to fill in the blanks below</span>
+    <div class="word-bank-chips">
+      <span class="word-chip">Cahokia</span>
+      <span class="word-chip">Tenochtitlan</span>
+      <span class="word-chip">Haudenosaunee</span>
+      <span class="word-chip">Inca</span>
+      <span class="word-chip">Ancestral Pueblo</span>
+      <span class="word-chip">quipu</span>
+      <span class="word-chip">Great Plains</span>
+      <span class="word-chip">Pacific Northwest</span>
+      <span class="word-chip">potlatch</span>
+      <span class="word-chip">pre-Columbian</span>
+    </div>
+  </div>
+
+  <div class="fill-questions">
+
+    <!-- Q1 -->
+    <div class="fill-item">
+      <div class="fill-item-num">Question 1</div>
+      <div class="fill-sentence body-serif">
+        The largest Mound Builder city,
+        <input class="fill-blank" type="text" id="q1" placeholder="______________" aria-label="Q1 answer" autocomplete="off">,
+        had an estimated population of 10,000–20,000 at its peak — larger than London at the same time period.
+      </div>
+    </div>
+
+    <!-- Q2 -->
+    <div class="fill-item">
+      <div class="fill-item-num">Question 2</div>
+      <div class="fill-sentence body-serif">
+        The Aztec capital
+        <input class="fill-blank" type="text" id="q2" placeholder="______________" aria-label="Q2 answer" autocomplete="off">
+        was an island city with aqueducts, floating gardens (chinampas), and over 200,000 residents.
+      </div>
+    </div>
+
+    <!-- Q3 -->
+    <div class="fill-item">
+      <div class="fill-item-num">Question 3</div>
+      <div class="fill-sentence body-serif">
+        The
+        <input class="fill-blank" type="text" id="q3fitb" placeholder="______________" aria-label="Q3 answer" autocomplete="off">
+        Confederacy was an Eastern Woodlands peoples who governed six nations under a democratic Great Law of Peace, partly led by clan mothers.
+      </div>
+    </div>
+
+    <!-- Q4 — two blanks -->
+    <div class="fill-item">
+      <div class="fill-item-num">Question 4</div>
+      <div class="fill-sentence body-serif">
+        The
+        <input class="fill-blank" type="text" id="q4a" placeholder="______________" aria-label="Q4 first answer" autocomplete="off" style="min-width:100px;">
+        governed an empire of ~12 million people across 2,500 miles of South American mountains, connecting it all with roads and knotted-string records called
+        <input class="fill-blank" type="text" id="q4b" placeholder="______________" aria-label="Q4 second answer" autocomplete="off" style="min-width:90px;">.
+      </div>
+    </div>
+
+    <!-- Q5 -->
+    <div class="fill-item">
+      <div class="fill-item-num">Question 5</div>
+      <div class="fill-sentence body-serif">
+        The term
+        <input class="fill-blank" type="text" id="q5" placeholder="______________" aria-label="Q5 answer" autocomplete="off">
+        refers to the time period BEFORE Christopher Columbus arrived in the Americas in 1492.
+      </div>
+    </div>
+
+  </div><!-- /.fill-questions -->
+
+  <hr class="divider-rule">
+
+  <!-- ═════════════════════════════════════════════════════════════════
+       PART 2 — SOURCE TASK
+       ═════════════════════════════════════════════════════════════════ -->
+  <div class="section-heading serif">
+    <span class="part-badge">Part 2</span>
+    Source Task
+  </div>
+
+  <div class="two-sources-container">
+    <div class="two-sources-header">Two Sources · Examine Both Carefully</div>
+    <div class="two-sources-body">
+      <!-- Source A -->
+      <div class="source-card source-card-a">
+        <span class="source-card-label">Source A — Spanish Explorer's Account, 1519</span>
+        <p class="source-card-text body-serif">When we arrived at the great city, I could not speak, for I had never seen anything so magnificent. The streets were wide, and canals ran alongside them. Markets were everywhere, filled with gold, cloth, and food of every kind. It was larger than any city in Spain.</p>
+      </div>
+      <!-- Source B -->
+      <div class="source-card source-card-b">
+        <span class="source-card-label">Source B — American Textbook, 1952</span>
+        <p class="source-card-text body-serif">Before Columbus arrived, North America was a vast, mostly empty wilderness. A few small tribes of hunters and gatherers roamed the land.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Q2A -->
+  <div class="question-block">
+    <span class="question-label">Question 2A</span>
+    <p class="question-prompt">Which source gives more reliable evidence about the scale and complexity of pre-Columbian civilizations? Explain your reasoning — <strong>what specific evidence does that source provide?</strong></p>
+    <textarea class="response-textarea" id="q2a" rows="4" style="min-height:100px;"
+      placeholder="The most reliable source is... because the evidence shows..."></textarea>
+  </div>
+
+  <!-- Q2B -->
+  <div class="question-block">
+    <span class="question-label">Question 2B</span>
+    <p class="question-prompt">What important information does Source B <strong>get WRONG or leave out?</strong> Use specific evidence from Units 3 and 4 to explain what a more accurate account would include.</p>
+    <textarea class="response-textarea" id="q2b" rows="4" style="min-height:100px;"
+      placeholder="Source B is inaccurate because it leaves out... A more accurate account would include..."></textarea>
+  </div>
+
+  <!-- Q2C -->
+  <div class="question-block">
+    <span class="question-label">Question 2C</span>
+    <p class="question-prompt">A historian needs to use sources carefully. What questions should an <strong>honest editor</strong> ask about Source A before using it? Think about whose perspective it represents and what it might leave out.</p>
+    <textarea class="response-textarea" id="q2c" rows="4" style="min-height:100px;"
+      placeholder="Before using Source A, an honest editor should ask..."></textarea>
+  </div>
+
+  <hr class="divider-rule">
+
+  <!-- ═════════════════════════════════════════════════════════════════
+       PART 3 — HISTORIAN'S CLAIM
+       ═════════════════════════════════════════════════════════════════ -->
+  <div class="section-heading serif">
+    <span class="part-badge">Part 3</span>
+    Historian's Claim
+  </div>
+
+  <!-- Hasty Herald clipping -->
+  <div class="herald-clipping-wrap">
+    <div class="herald-clipping">
+      <div class="herald-pin"></div>
+      <div class="herald-masthead">The Hasty Herald</div>
+      <div class="herald-tagline">All the News in a Hurry · Possibly Wrong</div>
+      <hr class="herald-rule">
+      <div class="herald-headline">Before Europeans Arrived, North America Was Mostly Empty Wilderness With Simple Communities</div>
+      <hr class="herald-rule">
+      <p class="herald-claim">Our reporters confirm: nothing much was going on over there before 1492. A few wandering bands, some basic camps — nothing worth writing about.</p>
+      <div class="herald-byline">— Filed by The Hasty Herald, this morning</div>
+      <div class="herald-stamp">Rushed to Print</div>
+    </div>
+  </div>
+
+  <p class="herald-task">The Gazette needs a correction. Do you have the evidence to set the record straight?</p>
+
+  <div class="question-block">
+    <span class="question-label">Question 3 — Synthesis Claim</span>
+    <p class="question-prompt">You are the editor. Write a paragraph that <strong>corrects this headline</strong> using specific evidence from Units 3 AND 4. Include at least <strong>THREE pieces of evidence</strong>, a clear claim, and your reasoning.</p>
+    <textarea class="response-textarea" id="q3" rows="7" style="min-height:180px;"
+      placeholder="The Hasty Herald's headline is incorrect. The evidence from Units 3 and 4 shows that..."></textarea>
+  </div>
+
+  <hr class="divider-rule">
+
+  <!-- ═════════════════════════════════════════════════════════════════
+       PART 4 — VIRTUE LENS
+       ═════════════════════════════════════════════════════════════════ -->
+  <div class="section-heading serif">
+    <span class="part-badge">Part 4</span>
+    Virtue Lens
+  </div>
+
+  <div class="virtue-chip">Honesty + Courtesy</div>
+
+  <div class="question-block">
+    <span class="question-label">Question 4 — Virtue Reflection</span>
+    <p class="question-prompt"><strong>Honesty</strong> in history means telling the complete story — not just the easy version. What is one important truth about pre-colonization North America that an honest historian must include? Why does leaving it out show a lack of honesty or courtesy?</p>
+    <textarea class="response-textarea" id="q4virtue" rows="5" style="min-height:120px;"
+      placeholder="One important truth that an honest historian must include is... Leaving this out shows a lack of honesty because..."></textarea>
+  </div>
+
+  <!-- ═════════════════════════════════════════════════════════════════
+       GATHERED ANSWERS
+       ═════════════════════════════════════════════════════════════════ -->
+  <div class="gathered-card">
+    <div class="gathered-header">
+      📋 Your Answers · Ready to Submit
+    </div>
+    <div class="gathered-body">
+      <p style="font-family:'Crimson Text',serif;font-size:15px;color:var(--ink-soft);margin-bottom:12px;">
+        Click the button below to collect all your answers. Then copy and paste into your Canvas assignment.
+      </p>
+      <textarea class="gathered-output" id="gathered-output" readonly
+        placeholder="Click 'Copy All Answers' to gather your responses here..."></textarea>
+      <div style="display:flex;align-items:center;flex-wrap:wrap;gap:8px;margin-top:4px;">
+        <button class="copy-btn" onclick="copyAnswers()">📋 Copy All Answers</button>
+        <span class="copy-confirm" id="copy-confirm">✓ Copied!</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- ═════════════════════════════════════════════════════════════════
+       CHECKLIST
+       ═════════════════════════════════════════════════════════════════ -->
+  <div class="checklist-card">
+    <div class="checklist-title">✅ Before You Submit</div>
+    <div class="checklist-items">
+      <label class="checklist-item">
+        <input type="checkbox" id="check1"> I answered all 5 Knowledge Check items
+      </label>
+      <label class="checklist-item">
+        <input type="checkbox" id="check2"> I answered all 3 Source Task questions (A, B, and C)
+      </label>
+      <label class="checklist-item">
+        <input type="checkbox" id="check3"> I wrote my Synthesis Claim using evidence from Units 3 AND 4
+      </label>
+      <label class="checklist-item">
+        <input type="checkbox" id="check4"> I copied all my answers and submitted to Canvas
+      </label>
+    </div>
+  </div>
+
+  <!-- ═════════════════════════════════════════════════════════════════
+       RUBRIC (collapsible, starts collapsed)
+       ═════════════════════════════════════════════════════════════════ -->
+  <div class="rubric-wrap">
+    <button class="rubric-toggle-btn" id="rubricToggle" onclick="toggleRubric()" aria-expanded="false">
+      <span>▼ View Scoring Rubric (12 pts)</span>
+      <span class="rubric-toggle-icon" id="rubricIcon">▼</span>
+    </button>
+    <div class="rubric-body" id="rubricBody">
+      <table class="rubric-table">
+        <thead>
+          <tr>
+            <th>Criterion</th>
+            <th class="rubric-pts-header">Beginning <span class="rubric-pts-label">1 pt</span></th>
+            <th class="rubric-pts-header">Developing <span class="rubric-pts-label">2 pts</span></th>
+            <th class="rubric-pts-header">Secure <span class="rubric-pts-label">3 pts</span></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Content Knowledge</td>
+            <td>States basic facts without context or significance</td>
+            <td>Explains accurately with some context</td>
+            <td>Accuracy + historical context + significance clearly stated</td>
+          </tr>
+          <tr>
+            <td>Evidence &amp; Corroboration</td>
+            <td>Weak or single piece of evidence; little connection to claim</td>
+            <td>Uses relevant evidence; makes a connection</td>
+            <td>Strong evidence from multiple sources or units; corroborates and explains</td>
+          </tr>
+          <tr>
+            <td>Historical &amp; Civic Argument</td>
+            <td>Makes a claim with little or no reasoning</td>
+            <td>Claim + evidence present; reasoning is basic</td>
+            <td>Clear claim + strong evidence + reasoning + addresses the other side</td>
+          </tr>
+          <tr>
+            <td>Virtue &amp; Civic Reasoning</td>
+            <td>Names a virtue minimally or without connection to history</td>
+            <td>Connects virtue to a historical event or person</td>
+            <td>Evaluates how honesty or courtesy shaped historical choices or omissions</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+</div><!-- /.lesson-shell -->
+
+<!-- ═══════════════════════════════════════════════════════════════════
+     FOOTER
+     ═══════════════════════════════════════════════════════════════════ -->
+<footer class="oao-footer">
+  <div class="oao-footer-text">
+    🏫 <span>Optima Academy Online</span> · Social Studies · Grade 5 · Assessment G5-U05 · The Republic Gazette Assessment Edition · © 2025 Optima Academy Online
+  </div>
+</footer>
+
+<script>
+/* ═══════════════════════════════════════════════════════════════════
+   AUTO-SAVE TO LOCALSTORAGE
+   ═══════════════════════════════════════════════════════════════════ */
+const STORAGE_KEY = 'g5-assessment-u05-continent-colonization';
+
+const FIELD_IDS = ['q1','q2','q3fitb','q4a','q4b','q2a','q2b','q2c','q3','q4virtue'];
+
+function saveAnswers() {
+  const data = {};
+  FIELD_IDS.forEach(function(id) {
+    var el = document.getElementById(id);
+    if (el) data[id] = el.value;
+  });
+  try { localStorage.setItem(STORAGE_KEY, JSON.stringify(data)); } catch(e) {}
+}
+
+function loadAnswers() {
+  try {
+    var raw = localStorage.getItem(STORAGE_KEY);
+    if (!raw) return;
+    var data = JSON.parse(raw);
+    FIELD_IDS.forEach(function(id) {
+      var el = document.getElementById(id);
+      if (el && data[id] !== undefined) el.value = data[id];
+    });
+  } catch(e) {}
+}
+
+// Attach auto-save to all inputs/textareas
+document.addEventListener('DOMContentLoaded', function() {
+  loadAnswers();
+  FIELD_IDS.forEach(function(id) {
+    var el = document.getElementById(id);
+    if (el) {
+      el.addEventListener('input', saveAnswers);
+      el.addEventListener('change', saveAnswers);
+    }
+  });
+});
+
+/* ═══════════════════════════════════════════════════════════════════
+   GATHER ANSWERS
+   ═══════════════════════════════════════════════════════════════════ */
+function gatherAnswers() {
+  function val(id) {
+    var el = document.getElementById(id);
+    return el ? (el.value.trim() || '(no answer)') : '(no answer)';
+  }
+
+  var lines = [];
+  lines.push('═══════════════════════════════════════');
+  lines.push('G5-U05 ASSESSMENT: A CONTINENT BEFORE COLONIZATION');
+  lines.push('Assessment Edition · Week 11');
+  lines.push('═══════════════════════════════════════');
+  lines.push('');
+  lines.push('── PART 1: KNOWLEDGE CHECK ──────────────');
+  lines.push('Q1 (Mound Builder city): ' + val('q1'));
+  lines.push('Q2 (Aztec capital): ' + val('q2'));
+  lines.push('Q3 (Confederacy): ' + val('q3fitb'));
+  lines.push('Q4a (Empire): ' + val('q4a'));
+  lines.push('Q4b (Knotted-string records): ' + val('q4b'));
+  lines.push('Q5 (Time period before 1492): ' + val('q5'));
+  lines.push('');
+  lines.push('── PART 2: SOURCE TASK ──────────────────');
+  lines.push('Q2A — More reliable source and reasoning:');
+  lines.push(val('q2a'));
+  lines.push('');
+  lines.push('Q2B — What Source B gets wrong or leaves out:');
+  lines.push(val('q2b'));
+  lines.push('');
+  lines.push('Q2C — Questions an honest editor would ask about Source A:');
+  lines.push(val('q2c'));
+  lines.push('');
+  lines.push('── PART 3: HISTORIAN\'S CLAIM ────────────');
+  lines.push('Q3 — Synthesis Claim (correcting The Hasty Herald):');
+  lines.push(val('q3'));
+  lines.push('');
+  lines.push('── PART 4: VIRTUE LENS ─────────────────');
+  lines.push('Q4 — Virtue Reflection (Honesty + Courtesy):');
+  lines.push(val('q4virtue'));
+  lines.push('');
+  lines.push('═══════════════════════════════════════');
+
+  var output = lines.join('\n');
+  var el = document.getElementById('gathered-output');
+  if (el) el.value = output;
+  return output;
+}
+
+/* ═══════════════════════════════════════════════════════════════════
+   COPY ALL ANSWERS
+   ═══════════════════════════════════════════════════════════════════ */
+function copyAnswers() {
+  var text = gatherAnswers();
+  var confirm = document.getElementById('copy-confirm');
+
+  if (navigator.clipboard && navigator.clipboard.writeText) {
+    navigator.clipboard.writeText(text).then(function() {
+      showCopied(confirm);
+    }).catch(function() {
+      fallbackCopy(text, confirm);
+    });
+  } else {
+    fallbackCopy(text, confirm);
+  }
+}
+
+function fallbackCopy(text, confirm) {
+  var el = document.getElementById('gathered-output');
+  if (!el) return;
+  el.select();
+  try {
+    document.execCommand('copy');
+    showCopied(confirm);
+  } catch(e) {}
+}
+
+function showCopied(confirm) {
+  if (!confirm) return;
+  confirm.style.display = 'inline';
+  setTimeout(function() { confirm.style.display = 'none'; }, 3000);
+}
+
+/* ═══════════════════════════════════════════════════════════════════
+   RUBRIC TOGGLE
+   ═══════════════════════════════════════════════════════════════════ */
+function toggleRubric() {
+  var body = document.getElementById('rubricBody');
+  var btn  = document.getElementById('rubricToggle');
+  var icon = document.getElementById('rubricIcon');
+
+  var isOpen = body.classList.contains('open');
+  if (isOpen) {
+    body.classList.remove('open');
+    btn.classList.remove('open');
+    btn.setAttribute('aria-expanded', 'false');
+    icon.style.transform = 'rotate(0deg)';
+  } else {
+    body.classList.add('open');
+    btn.classList.add('open');
+    btn.setAttribute('aria-expanded', 'true');
+    icon.style.transform = 'rotate(180deg)';
+  }
+}
+</script>
+
+</body>
+</html>

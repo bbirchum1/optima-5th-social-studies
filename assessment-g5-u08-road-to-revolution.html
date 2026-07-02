@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>G5-U08 · Road to Revolution | Optima Academy Online</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800;900&family=Special+Elite&family=Crimson+Text:ital,wght@0,400;0,600;1,400&family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+:root{--bg:#F5F1E8;--surface:#FFFFFF;--ink:#1A1F2E;--ink-soft:#4A5568;--ink-muted:#7A8398;--border-soft:#E5DFD0;--shadow:0 2px 8px rgba(26,31,46,.08);--shadow-lift:0 6px 20px rgba(26,31,46,.12);--paper-cream:#FAF3E0;--paper-ivory:#FAF0E0;--paper-manila:#E8DCC0;--paper-newsprint:#F5F2EC;--paper-edge:#D4C9A8;--gazette-gold:#B8923E;--gazette-gold-dark:#8B6F2E;--gazette-navy:#1A2138;--gazette-navy-dark:#0E1426;--herald-red:#8B2D26;--editor-leather:#5C3D24;--editor-stamp:#5C7A4A;--source-blue:#4A6FB5;}
+html,body{background:var(--bg);color:var(--ink);font-family:'Inter',system-ui,sans-serif;font-size:16px;line-height:1.55;min-height:100vh;-webkit-font-smoothing:antialiased}
+.page-shell{max-width:900px;margin:0 auto;padding:0 16px 80px}
+.oao-header{background:var(--gazette-navy);border-bottom:6px solid var(--gazette-gold);padding:14px 24px;display:flex;align-items:center;justify-content:space-between;gap:16px}
+.oao-header-left{display:flex;align-items:center;gap:14px}
+.oao-logo-wrap{width:44px;height:44px;border-radius:50%;background:#fff;display:flex;align-items:center;justify-content:center;overflow:hidden;flex-shrink:0;border:2px solid var(--gazette-gold)}
+.oao-logo-wrap img{width:38px;height:38px;object-fit:contain}
+.oao-title{font-family:'Playfair Display',Georgia,serif;font-size:18px;font-weight:800;color:#fff;line-height:1.2}
+.oao-subtitle{font-family:'Crimson Text',Georgia,serif;font-size:12px;font-style:italic;color:var(--gazette-gold);opacity:.9}
+.oao-badge{background:rgba(184,146,62,.15);border:1.5px solid var(--gazette-gold);color:var(--gazette-gold);font-family:'Special Elite',monospace;font-size:12px;font-weight:700;padding:6px 14px;border-radius:20px;text-transform:uppercase;letter-spacing:1px;white-space:nowrap}
+.masthead-wrap{background:var(--paper-cream);border:3px double var(--gazette-navy);border-radius:4px;margin:12px 0 0;overflow:hidden;box-shadow:var(--shadow-lift)}
+.masthead-inner{padding:12px 24px 10px;text-align:center;border-bottom:2px solid var(--gazette-navy)}
+.masthead-flags{display:flex;justify-content:space-between;align-items:center;font-family:'Special Elite',monospace;font-size:10px;color:var(--ink-soft);text-transform:uppercase;letter-spacing:1.5px;margin-bottom:6px}
+.masthead-title{font-family:'Playfair Display',Georgia,serif;font-weight:900;font-size:clamp(26px,5vw,44px);color:var(--gazette-navy);line-height:1.1;letter-spacing:1px}
+.masthead-tagline{font-family:'Crimson Text',Georgia,serif;font-style:italic;font-size:13px;color:var(--editor-leather);margin-top:3px}
+.masthead-svg-wrap{background:var(--paper-newsprint);border-bottom:1px solid var(--paper-edge)}
+.masthead-svg-wrap svg{display:block;width:100%;height:auto;max-height:130px}
+.masthead-headline{background:var(--gazette-navy);color:var(--paper-cream);font-family:'Playfair Display',Georgia,serif;font-weight:800;font-size:15px;text-align:center;padding:9px 20px;letter-spacing:.5px;text-transform:uppercase}
+.masthead-headline::before,.masthead-headline::after{content:'★';margin:0 10px;color:var(--gazette-gold);font-size:13px}
+.hero-strip{background:var(--gazette-navy);border-radius:10px;padding:18px 24px;margin:12px 0;display:flex;flex-wrap:wrap;align-items:center;gap:10px;box-shadow:var(--shadow-lift)}
+.hero-unit-title{font-family:'Playfair Display',Georgia,serif;font-size:20px;font-weight:800;color:var(--paper-cream);flex:1 1 auto}
+.hero-badge{background:rgba(184,146,62,.15);border:1px solid var(--gazette-gold);color:var(--gazette-gold);font-family:'Special Elite',monospace;font-size:11px;padding:5px 12px;border-radius:14px;text-transform:uppercase;letter-spacing:1px;white-space:nowrap}
+.hero-badge.solid{background:var(--gazette-gold);color:var(--gazette-navy-dark);font-weight:700}
+.hero-virtue{font-family:'Crimson Text',Georgia,serif;font-size:14px;color:rgba(250,243,224,.8);font-style:italic;width:100%}
+.hero-virtue strong{color:var(--gazette-gold)}
+.instr-card{background:var(--paper-cream);border:1.5px solid var(--paper-edge);border-left:5px solid var(--gazette-gold);border-radius:10px;padding:16px 20px;margin:12px 0;box-shadow:var(--shadow)}
+.instr-title{font-family:'Playfair Display',Georgia,serif;font-size:17px;font-weight:800;color:var(--gazette-navy);margin-bottom:10px}
+.instr-body{font-family:'Crimson Text',Georgia,serif;font-size:15px;line-height:1.65;color:var(--ink)}
+.instr-body p{margin-bottom:8px}.instr-body p:last-child{margin-bottom:0}
+.instr-note{background:rgba(184,146,62,.08);border:1px dashed var(--gazette-gold);border-radius:6px;padding:8px 12px;margin-top:10px;font-family:'Special Elite',monospace;font-size:11px;color:var(--gazette-gold-dark);text-transform:uppercase;letter-spacing:1.2px}
+.part-card{background:var(--surface);border:1px solid var(--border-soft);border-radius:10px;overflow:hidden;margin:14px 0;box-shadow:var(--shadow)}
+.part-header{background:var(--gazette-navy);color:var(--paper-cream);font-family:'Playfair Display',Georgia,serif;font-weight:800;font-size:17px;padding:12px 20px;display:flex;align-items:center;gap:10px}
+.part-num{background:var(--gazette-gold);color:var(--gazette-navy-dark);font-family:'Special Elite',monospace;font-size:10px;padding:3px 9px;border-radius:10px;text-transform:uppercase;letter-spacing:1px;font-weight:700}
+.part-body{padding:16px 20px 20px}
+.word-bank{background:var(--paper-cream);border:1.5px dashed var(--gazette-gold);border-radius:8px;padding:12px 16px;margin-bottom:16px}
+.wb-label{font-family:'Special Elite',monospace;font-size:10px;color:var(--gazette-gold-dark);text-transform:uppercase;letter-spacing:2px;font-weight:700;margin-bottom:8px}
+.wb-terms{display:flex;flex-wrap:wrap;gap:6px}
+.wb-term{display:inline-flex;align-items:center;background:var(--surface);border:1px solid var(--paper-edge);border-radius:14px;padding:4px 12px;font-family:'Crimson Text',Georgia,serif;font-size:14px;color:var(--ink)}
+.q-block{background:var(--surface);border:1px solid var(--border-soft);border-left:3px solid var(--gazette-gold);border-radius:10px;padding:14px 16px;margin-bottom:12px}
+.q-row{display:flex;align-items:flex-start;gap:12px;margin-bottom:10px}
+.q-num{background:var(--gazette-gold);color:var(--gazette-navy-dark);width:28px;height:28px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-family:'Inter',sans-serif;font-size:13px;font-weight:800;flex-shrink:0;margin-top:2px}
+.q-text{font-family:'Crimson Text',Georgia,serif;font-size:16px;line-height:1.6;color:var(--ink);flex:1}
+.q-text strong{color:var(--gazette-navy)}
+.ta{width:100%;border:1.5px solid var(--paper-edge);border-radius:8px;padding:10px 14px;font-family:'Crimson Text',Georgia,serif;font-size:15px;line-height:1.55;background:var(--paper-cream);color:var(--ink);resize:vertical;transition:border-color .2s ease}
+.ta:focus{outline:none;border-color:var(--gazette-gold);background:#fff}
+.ta.sm{min-height:68px}.ta.md{min-height:130px}.ta.lg{min-height:200px}
+.source-card{background:var(--paper-ivory);border:1.5px solid #9BAFD0;border-left:5px solid var(--source-blue);border-radius:8px;padding:14px 18px;margin:14px 0}
+.source-label{font-family:'Special Elite',monospace;font-size:10px;color:var(--source-blue);text-transform:uppercase;letter-spacing:2px;font-weight:700;margin-bottom:5px}
+.source-attr{font-family:'Crimson Text',Georgia,serif;font-size:13px;color:var(--ink-soft);font-style:italic;margin-bottom:10px;padding-bottom:8px;border-bottom:1px solid rgba(74,111,181,.25)}
+.source-text{font-family:'Crimson Text',Georgia,serif;font-size:17px;font-style:italic;color:var(--ink);line-height:1.7;padding-left:16px;border-left:2px solid rgba(74,111,181,.3)}
+.virtue-tag{display:inline-block;background:var(--editor-stamp);color:var(--paper-cream);font-family:'Special Elite',monospace;font-size:10px;font-weight:700;padding:4px 10px;border-radius:4px;text-transform:uppercase;letter-spacing:1.5px;margin-bottom:10px}
+.virtue-prompt{font-family:'Crimson Text',Georgia,serif;font-size:16px;line-height:1.65;color:var(--ink);margin-bottom:12px}
+.gathered-card{background:var(--gazette-navy);border-radius:10px;padding:18px 22px;margin:16px 0;box-shadow:var(--shadow-lift)}
+.gathered-title{font-family:'Playfair Display',Georgia,serif;font-size:18px;font-weight:800;color:var(--paper-cream);margin-bottom:4px;text-align:center}
+.gathered-sub{font-family:'Crimson Text',Georgia,serif;font-size:13px;color:rgba(250,243,224,.7);font-style:italic;text-align:center;margin-bottom:12px}
+#gathered-output{width:100%;min-height:180px;background:rgba(250,243,224,.07);border:1px solid rgba(184,146,62,.4);border-radius:8px;padding:12px 14px;font-family:'Special Elite',monospace;font-size:12px;line-height:1.6;color:var(--paper-cream);resize:vertical}
+.copy-row{display:flex;align-items:center;gap:12px;margin-top:12px;justify-content:center}
+.copy-btn{background:var(--gazette-gold);color:var(--gazette-navy-dark);border:none;padding:10px 24px;border-radius:24px;font-family:'Playfair Display',Georgia,serif;font-size:15px;font-weight:800;cursor:pointer;transition:all .2s ease}
+.copy-btn:hover{background:#D4A84E;transform:translateY(-1px)}
+#copy-feedback{display:none;font-family:'Special Elite',monospace;font-size:13px;color:#6FCF97;font-weight:700}
+.checklist-card{background:var(--surface);border:1.5px solid var(--border-soft);border-radius:10px;padding:18px 22px;margin:14px 0;box-shadow:var(--shadow)}
+.checklist-title{font-family:'Playfair Display',Georgia,serif;font-size:17px;font-weight:800;color:var(--gazette-navy);margin-bottom:12px}
+.cl-item{display:flex;align-items:flex-start;gap:10px;padding:9px 0;border-bottom:1px solid var(--border-soft)}
+.cl-item:last-of-type{border-bottom:none}
+.cl-item input[type=checkbox]{width:18px;height:18px;accent-color:var(--editor-stamp);flex-shrink:0;margin-top:2px;cursor:pointer}
+.cl-item label{font-family:'Crimson Text',Georgia,serif;font-size:15px;color:var(--ink);cursor:pointer;line-height:1.5}
+#complete-msg{display:none;background:#E8F8EE;border:1.5px solid #4A9B6F;border-radius:8px;padding:12px 16px;margin-top:14px;font-family:'Crimson Text',Georgia,serif;font-size:15px;color:#1A6B3A;font-weight:600;text-align:center}
+.rubric-card{background:var(--paper-cream);border:1.5px solid var(--paper-edge);border-radius:10px;overflow:hidden;margin:14px 0;box-shadow:var(--shadow)}
+.rubric-btn{width:100%;background:var(--paper-manila);border:none;padding:14px 20px;text-align:left;font-family:'Playfair Display',Georgia,serif;font-size:16px;font-weight:800;color:var(--gazette-navy);cursor:pointer;display:flex;align-items:center;justify-content:space-between;transition:background .15s ease}
+.rubric-btn:hover{background:var(--paper-edge)}
+.rubric-hint{font-family:'Special Elite',monospace;font-size:11px;color:var(--ink-muted);text-transform:uppercase;letter-spacing:1px}
+.rubric-body{display:none;padding:4px 18px 18px}
+.rubric-note{font-family:'Crimson Text',Georgia,serif;font-size:14px;color:var(--ink-soft);font-style:italic;padding:10px 0 6px}
+.rubric-table{width:100%;border-collapse:collapse;margin-top:10px;font-family:'Crimson Text',Georgia,serif;font-size:14px}
+.rubric-table th{background:var(--gazette-navy);color:var(--paper-cream);padding:10px 12px;text-align:left;font-family:'Playfair Display',Georgia,serif;font-size:13px;font-weight:800}
+.rubric-table td{padding:10px 12px;border:1px solid var(--paper-edge);vertical-align:top;line-height:1.5}
+.rubric-table tr:nth-child(even) td{background:rgba(250,243,224,.5)}
+.rubric-total{margin-top:10px;font-family:'Special Elite',monospace;font-size:12px;color:var(--gazette-gold-dark);text-transform:uppercase;letter-spacing:1.5px;text-align:right;font-weight:700}
+.oao-footer{background:var(--gazette-navy);border-top:4px solid var(--gazette-gold);margin-top:40px;padding:16px 24px;text-align:center}
+.oao-footer p{font-family:'Special Elite',monospace;font-size:11px;color:rgba(250,243,224,.7);text-transform:uppercase;letter-spacing:1.5px;line-height:1.8}
+.oao-footer p strong{color:var(--gazette-gold)}
+.match-grid{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin:10px 0 12px}
+.match-row{display:flex;align-items:flex-start;gap:10px;background:var(--paper-cream);border:1px solid var(--paper-edge);border-radius:8px;padding:10px 12px}
+.match-label{font-family:'Crimson Text',Georgia,serif;font-size:14px;color:var(--ink);flex:1;line-height:1.45}
+.match-input{width:46px;border:1.5px solid var(--paper-edge);border-radius:6px;padding:5px 8px;font-family:'Special Elite',monospace;font-size:14px;text-align:center;background:#fff;color:var(--gazette-navy);flex-shrink:0}
+.match-input:focus{outline:none;border-color:var(--gazette-gold)}
+.hasty-herald{background:#FDF6EC;border:2px solid var(--gazette-gold);border-radius:10px;padding:16px 18px;margin-bottom:14px}
+.hh-banner{font-family:'Playfair Display',Georgia,serif;font-size:13px;font-weight:800;color:var(--herald-red);margin-bottom:6px;text-transform:uppercase;letter-spacing:.5px}
+.hh-claim{font-family:'Crimson Text',Georgia,serif;font-size:16px;color:var(--ink);font-style:italic;line-height:1.6;padding:10px 14px;background:rgba(139,45,38,.06);border-left:3px solid var(--herald-red);border-radius:0 6px 6px 0;margin-bottom:10px}
+</style>
+</head>
+<body>
+
+<header class="oao-header">
+  <div class="oao-header-left">
+    <div class="oao-logo-wrap">
+      <img src="https://raw.githubusercontent.com/optimaondemand/optima-assets/eeb0b335630058906d52f478028361d352253a93/images/Optima%20Final%20Circle%20-%20Owl%20Only.png" alt="Optima owl">
+    </div>
+    <div>
+      <div class="oao-title">Optima Academy Online</div>
+      <div class="oao-subtitle">An Education Experience Company</div>
+    </div>
+  </div>
+  <div class="oao-badge">Grade 5 · Unit 8</div>
+</header>
+
+<div class="page-shell">
+
+  <div class="masthead-wrap">
+    <div class="masthead-inner">
+      <div class="masthead-flags">
+        <span>★ 5th Grade Social Studies ★</span>
+        <span>★ Weeks 19–22 ★</span>
+      </div>
+      <div class="masthead-title">The Republic Gazette</div>
+      <div class="masthead-tagline">Assessment · G5-U08 · Road to Revolution</div>
+    </div>
+
+    <div class="masthead-svg-wrap">
+      <svg viewBox="0 0 900 130" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <rect width="900" height="130" fill="#F5F2EC"/>
+        <!-- Ground strip -->
+        <rect x="0" y="95" width="900" height="35" fill="#E8DCC0" opacity=".45"/>
+        <!-- Liberty Tree trunk and canopy -->
+        <rect x="58" y="60" width="14" height="45" rx="3" fill="#6B4C2A"/>
+        <ellipse cx="65" cy="50" rx="32" ry="28" fill="#3D6B35" opacity=".88"/>
+        <ellipse cx="48" cy="62" rx="18" ry="14" fill="#4A7A3E" opacity=".65"/>
+        <ellipse cx="84" cy="64" rx="16" ry="12" fill="#3D6B35" opacity=".65"/>
+        <!-- Liberty ribbon on tree -->
+        <path d="M50 76 Q65 69 80 76" stroke="#B8923E" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+        <text x="52" y="73" font-family="Georgia,serif" font-size="7" fill="#8B6F2E" font-style="italic">Liberty</text>
+        <!-- Rolled Parchment center -->
+        <rect x="330" y="28" width="240" height="78" rx="5" fill="#FAF0E0" stroke="#D4C9A8" stroke-width="2"/>
+        <ellipse cx="330" cy="67" rx="10" ry="39" fill="#E8DCC0" stroke="#C4B99A" stroke-width="1.5"/>
+        <ellipse cx="570" cy="67" rx="10" ry="39" fill="#E8DCC0" stroke="#C4B99A" stroke-width="1.5"/>
+        <!-- Text lines on parchment -->
+        <line x1="350" y1="47" x2="550" y2="47" stroke="#C4B99A" stroke-width="1.5" stroke-dasharray="5,3"/>
+        <line x1="350" y1="58" x2="550" y2="58" stroke="#C4B99A" stroke-width="1.5" stroke-dasharray="5,3"/>
+        <line x1="350" y1="69" x2="550" y2="69" stroke="#C4B99A" stroke-width="1.5" stroke-dasharray="5,3"/>
+        <line x1="350" y1="80" x2="550" y2="80" stroke="#C4B99A" stroke-width="1.5" stroke-dasharray="5,3"/>
+        <text x="450" y="43" font-family="Georgia,serif" font-size="9" fill="#8B6F2E" text-anchor="middle" font-style="italic">We hold these truths to be self-evident…</text>
+        <!-- Quill pen (right of parchment) -->
+        <line x1="600" y1="22" x2="626" y2="102" stroke="#2A1F0E" stroke-width="1.5"/>
+        <path d="M600 22 Q648 12 626 102 Q596 58 600 22Z" fill="#FAF3E0" stroke="#C4B99A" stroke-width="1"/>
+        <path d="M608 32 Q644 18 626 102" fill="none" stroke="#D4C9A8" stroke-width="1"/>
+        <!-- Ink spot at quill tip -->
+        <ellipse cx="626" cy="104" rx="4" ry="3" fill="#1A1F2E" opacity=".4"/>
+        <!-- Stars -->
+        <text x="150" y="32" font-size="16" fill="#B8923E" opacity=".75">★</text>
+        <text x="240" y="52" font-size="11" fill="#B8923E" opacity=".5">★</text>
+        <text x="700" y="38" font-size="15" fill="#B8923E" opacity=".7">★</text>
+        <text x="775" y="58" font-size="10" fill="#B8923E" opacity=".55">★</text>
+        <text x="820" y="30" font-size="19" fill="#B8923E" opacity=".6">★</text>
+        <text x="860" y="75" font-size="12" fill="#B8923E" opacity=".45">★</text>
+        <!-- Colonial flag pole (far right) -->
+        <line x1="840" y1="18" x2="840" y2="105" stroke="#5C3D24" stroke-width="3"/>
+        <rect x="841" y="18" width="52" height="34" rx="2" fill="#1A2138" opacity=".65"/>
+        <text x="867" y="32" font-size="8" fill="#FAF3E0" text-anchor="middle">★ ★ ★</text>
+        <text x="867" y="42" font-size="7" fill="#FAF3E0" text-anchor="middle">★ ★ ★</text>
+        <!-- Ground line -->
+        <line x1="0" y1="98" x2="900" y2="98" stroke="#D4C9A8" stroke-width="1"/>
+      </svg>
+    </div>
+
+    <div class="masthead-headline">Road to Revolution · Weeks 19–22 · Grade 5</div>
+  </div>
+
+  <div class="hero-strip">
+    <div class="hero-unit-title">Unit 8 — Road to Revolution</div>
+    <div class="hero-badge solid">Weeks 19–22</div>
+    <div class="hero-badge">G5-U08</div>
+    <div class="hero-virtue"><strong>Virtues:</strong> Courage · Self-Governance · Courtesy</div>
+  </div>
+
+  <div class="instr-card">
+    <div class="instr-title">How to Complete This Assessment</div>
+    <div class="instr-body">
+      <p><strong>Part 1 — Knowledge Check:</strong> Use words from the word bank to complete each sentence. Not all words will be used. For the matching question, write the correct letter in the box provided.</p>
+      <p><strong>Part 2 — Source Task:</strong> Read the primary source carefully, then answer all three questions in complete sentences using evidence from the text.</p>
+      <p><strong>Part 3 — Hasty Herald:</strong> The headline below is missing important context. Write a better, more complete claim using at least two pieces of evidence.</p>
+      <p><strong>Part 4 — Virtue Reflection:</strong> Think carefully and write a focused response connecting the virtue to what you studied this unit.</p>
+    </div>
+    <div class="instr-note">When finished — click "Copy All Answers" and paste into your assignment submission.</div>
+  </div>
+
+  <!-- PART 1 -->
+  <div class="part-card">
+    <div class="part-header">
+      <span class="part-num">Part 1</span> Knowledge Check — Word Bank &amp; Matching
+    </div>
+    <div class="part-body">
+
+      <div class="word-bank">
+        <div class="wb-label">Word Bank</div>
+        <div class="wb-terms">
+          <span class="wb-term">grievance</span>
+          <span class="wb-term">taxation</span>
+          <span class="wb-term">unalienable rights</span>
+          <span class="wb-term">Patriot</span>
+          <span class="wb-term">Loyalist</span>
+          <span class="wb-term">declaration</span>
+          <span class="wb-term">Parliament</span>
+          <span class="wb-term">representation</span>
+        </div>
+      </div>
+
+      <div class="q-block">
+        <div class="q-row">
+          <div class="q-num">1</div>
+          <div class="q-text">A __________ is a formal complaint about an unfair treatment. Colonial leaders listed their grievances against King George III in the Declaration of Independence.</div>
+        </div>
+        <textarea class="ta sm" data-label="P1-Q1: Grievance fill-in" placeholder="Write the word that completes the sentence…"></textarea>
+      </div>
+
+      <div class="q-block">
+        <div class="q-row">
+          <div class="q-num">2</div>
+          <div class="q-text">Colonists who believed Parliament had no right to tax them without elected representatives used the slogan "No __________ without representation!"</div>
+        </div>
+        <textarea class="ta sm" data-label="P1-Q2: Taxation fill-in" placeholder="Write the word that completes the sentence…"></textarea>
+      </div>
+
+      <div class="q-block">
+        <div class="q-row">
+          <div class="q-num">3</div>
+          <div class="q-text">A __________ was a colonist who supported independence from Britain and was willing to fight for it. A Loyalist was a colonist who remained loyal to the British king.</div>
+        </div>
+        <textarea class="ta sm" data-label="P1-Q3: Patriot fill-in" placeholder="Write the word that completes the sentence…"></textarea>
+      </div>
+
+      <div class="q-block">
+        <div class="q-row">
+          <div class="q-num">4</div>
+          <div class="q-text">The Declaration of Independence states that all people have __________ — rights that cannot be taken away, including life, liberty, and the pursuit of happiness.</div>
+        </div>
+        <textarea class="ta sm" data-label="P1-Q4: Unalienable rights fill-in" placeholder="Write the word or phrase that completes the sentence…"></textarea>
+      </div>
+
+      <div class="q-block">
+        <div class="q-row">
+          <div class="q-num">5</div>
+          <div class="q-text">The colonial protests against the Stamp Act, Tea Act, and other laws were all about the same core idea: the colonists had no elected representatives in __________, the British lawmaking body, yet were still taxed by it.</div>
+        </div>
+        <textarea class="ta sm" data-label="P1-Q5: Parliament fill-in" placeholder="Write the word that completes the sentence…"></textarea>
+      </div>
+
+      <div class="q-block">
+        <div class="q-row">
+          <div class="q-num">6</div>
+          <div class="q-text"><strong>Matching.</strong> Write the correct letter next to each description. Use each letter once.<br><br>
+          <strong>A)</strong> Thomas Jefferson &nbsp;&nbsp; <strong>B)</strong> King George III &nbsp;&nbsp; <strong>C)</strong> Abigail Adams &nbsp;&nbsp; <strong>D)</strong> Crispus Attucks</div>
+        </div>
+        <div class="match-grid">
+          <div class="match-row">
+            <div class="match-label">Wrote the Declaration of Independence for the Continental Congress</div>
+            <input class="match-input" type="text" maxlength="1" placeholder="_" aria-label="Match: Wrote the Declaration">
+          </div>
+          <div class="match-row">
+            <div class="match-label">British monarch who refused to address colonial grievances and hired Hessian soldiers</div>
+            <input class="match-input" type="text" maxlength="1" placeholder="_" aria-label="Match: British monarch">
+          </div>
+          <div class="match-row">
+            <div class="match-label">Wrote "Remember the Ladies" urging that women be included in new laws</div>
+            <input class="match-input" type="text" maxlength="1" placeholder="_" aria-label="Match: Remember the Ladies">
+          </div>
+          <div class="match-row">
+            <div class="match-label">African American sailor, first person killed in the Boston Massacre</div>
+            <input class="match-input" type="text" maxlength="1" placeholder="_" aria-label="Match: Boston Massacre">
+          </div>
+        </div>
+        <textarea class="ta sm" data-label="P1-Q6: Matching — Jefferson / King George / Abigail Adams / Crispus Attucks" placeholder="Summarize your matching answers here, e.g.: Declaration=A, Monarch=B, Ladies=C, Massacre=D"></textarea>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- PART 2 -->
+  <div class="part-card">
+    <div class="part-header">
+      <span class="part-num">Part 2</span> Source Task — The Declaration of Independence
+    </div>
+    <div class="part-body">
+
+      <div class="source-card">
+        <div class="source-label">Primary Source</div>
+        <div class="source-attr">Declaration of Independence, adopted by the Second Continental Congress, July 4, 1776</div>
+        <div class="source-text">"We hold these truths to be self-evident, that all men are created equal, that they are endowed by their Creator with certain unalienable Rights, that among these are Life, Liberty and the pursuit of Happiness. — That to secure these rights, Governments are instituted among Men, deriving their just powers from the consent of the governed."</div>
+      </div>
+
+      <div class="q-block">
+        <div class="q-row">
+          <div class="q-num">A</div>
+          <div class="q-text">What does "consent of the governed" mean? Explain it in your own words using evidence from the source.</div>
+        </div>
+        <textarea class="ta md" data-label="P2-Q2A: Consent of the governed — meaning and evidence" placeholder="Explain 'consent of the governed' in your own words. Reference specific words or phrases from the source as evidence."></textarea>
+      </div>
+
+      <div class="q-block">
+        <div class="q-row">
+          <div class="q-num">B</div>
+          <div class="q-text">The Declaration says "all men are created equal." In 1776, who was <strong>NOT</strong> treated equally in the colonies? Name at least two groups and explain the contradiction.</div>
+        </div>
+        <textarea class="ta lg" data-label="P2-Q2B: Who was NOT treated equally in 1776 — contradiction" placeholder="Name at least two groups who were not treated equally. Explain the contradiction between the Declaration's words and the reality of colonial life."></textarea>
+      </div>
+
+      <div class="q-block">
+        <div class="q-row">
+          <div class="q-num">C</div>
+          <div class="q-text">Is the Declaration a primary or secondary source? Who is the audience, and how might that affect what it says?</div>
+        </div>
+        <textarea class="ta md" data-label="P2-Q2C: Primary or secondary source — audience and purpose" placeholder="Identify the source type. Who was the intended audience? How might the audience have shaped the document's content and tone?"></textarea>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- PART 3 -->
+  <div class="part-card">
+    <div class="part-header">
+      <span class="part-num">Part 3</span> Hasty Herald — Correct the Record
+    </div>
+    <div class="part-body">
+
+      <div class="hasty-herald">
+        <div class="hh-banner">Hasty Herald — Incomplete Claim Alert</div>
+        <div class="hh-claim">"The American Revolution was simple — colonists were tired of taxes, so they fought back."</div>
+        <div class="instr-body">
+          <p>The Hasty Herald rushed to print without all the facts. Make a <strong>more complete claim</strong> that describes why the Revolution happened. Include evidence about at least <strong>two different causes</strong> — not just taxes.</p>
+        </div>
+      </div>
+
+      <textarea class="ta lg" data-label="P3: Hasty Herald — More complete causes of the Revolution" placeholder="Write your improved claim here. Use specific evidence about at least two causes beyond just taxation (e.g., Proclamation of 1763, lack of representation in Parliament, Enlightenment ideas about natural rights, British military occupation, the Boston Massacre…)"></textarea>
+
+      <div class="rubric-card">
+        <button class="rubric-btn" id="rubric-btn-p3" onclick="toggleSection('rubric-body-p3','rubric-btn-p3')">
+          <span>▼ View Assessment Rubric</span>
+          <span class="rubric-hint">Self-check your work</span>
+        </button>
+        <div class="rubric-body" id="rubric-body-p3">
+          <p class="rubric-note">Use this rubric to review your response before submitting.</p>
+          <table class="rubric-table">
+            <thead><tr><th>Level</th><th>What it looks like</th></tr></thead>
+            <tbody>
+              <tr><td><strong>Secure</strong></td><td>Names and explains at least two specific causes beyond taxes. Uses evidence such as lack of representation in Parliament, Proclamation of 1763 restricting westward expansion, Enlightenment ideas about natural rights, quartering of British troops, or the Boston Massacre as a symbol of oppression.</td></tr>
+              <tr><td><strong>Developing</strong></td><td>Names two causes but does not fully explain them or connect to specific evidence.</td></tr>
+              <tr><td><strong>Beginning</strong></td><td>Only mentions taxes, or restates the Hasty Herald claim without adding substance.</td></tr>
+            </tbody>
+          </table>
+          <div class="rubric-total">Max: 3 pts (Secure) · 2 pts (Developing) · 1 pt (Beginning)</div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- PART 4 -->
+  <div class="part-card">
+    <div class="part-header">
+      <span class="part-num">Part 4</span> Virtue Reflection — Courage
+    </div>
+    <div class="part-body">
+
+      <span class="virtue-tag">Virtue: Courage</span>
+
+      <div class="virtue-prompt">
+        Many people showed courage during the Revolution — but courage means different things for different people. A wealthy Patriot risking property is different from an enslaved person risking death to fight for a country that didn't grant them freedom. Write about <strong>one specific person or group</strong> who showed courage during this period and explain what made their courage meaningful.
+      </div>
+
+      <textarea class="ta lg" data-label="P4: Virtue — Courage (specific person or group, why meaningful)" placeholder="Name a specific person or group. Describe what they did. Explain what made their courage particularly meaningful — consider what they risked and what they were actually fighting for."></textarea>
+
+      <div class="rubric-card">
+        <button class="rubric-btn" id="rubric-btn-p4" onclick="toggleSection('rubric-body-p4','rubric-btn-p4')">
+          <span>▼ View Assessment Rubric</span>
+          <span class="rubric-hint">Self-check your work</span>
+        </button>
+        <div class="rubric-body" id="rubric-body-p4">
+          <p class="rubric-note">Use this rubric to review your response before submitting.</p>
+          <table class="rubric-table">
+            <thead><tr><th>Level</th><th>What it looks like</th></tr></thead>
+            <tbody>
+              <tr><td><strong>Secure</strong></td><td>Names a specific person or group, clearly describes their actions, and explains what made their courage especially meaningful given who they were and what they risked.</td></tr>
+              <tr><td><strong>Developing</strong></td><td>Names a person with a general description of courage, but does not fully explain why their courage was significant or different from others'.</td></tr>
+              <tr><td><strong>Beginning</strong></td><td>Makes a general statement about courage without naming a specific person or providing a meaningful explanation.</td></tr>
+            </tbody>
+          </table>
+          <div class="rubric-total">Max: 3 pts (Secure) · 2 pts (Developing) · 1 pt (Beginning)</div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- SUBMISSION CHECKLIST -->
+  <div class="checklist-card">
+    <div class="checklist-title">Before You Submit — Check Your Work</div>
+    <div class="cl-item">
+      <input type="checkbox" id="cl1" onchange="checkComplete()">
+      <label for="cl1">I completed all five fill-in sentences in Part 1 using words from the word bank.</label>
+    </div>
+    <div class="cl-item">
+      <input type="checkbox" id="cl2" onchange="checkComplete()">
+      <label for="cl2">I completed the matching section in Part 1 (Q6) and wrote my answers in the text box.</label>
+    </div>
+    <div class="cl-item">
+      <input type="checkbox" id="cl3" onchange="checkComplete()">
+      <label for="cl3">I read the Declaration source carefully and answered all three Part 2 questions using evidence.</label>
+    </div>
+    <div class="cl-item">
+      <input type="checkbox" id="cl4" onchange="checkComplete()">
+      <label for="cl4">My Part 3 Hasty Herald response includes at least two specific causes of the Revolution beyond taxes.</label>
+    </div>
+    <div class="cl-item">
+      <input type="checkbox" id="cl5" onchange="checkComplete()">
+      <label for="cl5">My Part 4 reflection names a specific person or group and explains what made their courage meaningful.</label>
+    </div>
+    <div id="complete-msg">Your assessment looks complete! Copy your answers below and submit.</div>
+  </div>
+
+  <!-- GATHER + COPY -->
+  <div class="gathered-card">
+    <div class="gathered-title">Copy All Answers</div>
+    <div class="gathered-sub">Your responses are gathered below — click Copy and paste into your assignment submission.</div>
+    <textarea id="gathered-output" readonly></textarea>
+    <div class="copy-row">
+      <button class="copy-btn" onclick="copyAnswers()">Copy All Answers</button>
+      <span id="copy-feedback">Copied!</span>
+    </div>
+  </div>
+
+</div><!-- /page-shell -->
+
+<footer class="oao-footer">
+  <p><strong>Optima Academy Online</strong> · Grade 5 Social Studies · Unit 8 · Road to Revolution</p>
+  <p>Weeks 19–22 · Virtues: Courage · Self-Governance · Courtesy</p>
+</footer>
+
+<script>
+function gatherAnswers(){var tas=document.querySelectorAll('textarea[data-label]'),out='';tas.forEach(function(ta){out+='--- '+ta.getAttribute('data-label')+' ---\n';out+=(ta.value.trim()||'(not answered)')+'\n\n';});var el=document.getElementById('gathered-output');if(el)el.value=out.trim();}
+function copyAnswers(){gatherAnswers();var text=document.getElementById('gathered-output').value;if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText(text).then(showCopied).catch(function(){fallbackCopy(text)});}else{fallbackCopy(text);}}
+function fallbackCopy(text){var el=document.getElementById('gathered-output');el.select();document.execCommand('copy');showCopied();}
+function showCopied(){var fb=document.getElementById('copy-feedback');if(fb){fb.style.display='inline';setTimeout(function(){fb.style.display='none'},2500);}}
+function checkComplete(){var boxes=document.querySelectorAll('.cl-item input[type=checkbox]');var all=Array.from(boxes).every(function(b){return b.checked});var msg=document.getElementById('complete-msg');if(msg)msg.style.display=all?'block':'none';}
+function toggleSection(bodyId,btnId){var rb=document.getElementById(bodyId),btn=document.getElementById(btnId);if(!rb||!btn)return;var open=rb.style.display==='block';rb.style.display=open?'none':'block';btn.querySelector('span').textContent=open?'▼ View Assessment Rubric':'▲ Hide Assessment Rubric';}
+document.addEventListener('DOMContentLoaded',function(){document.querySelectorAll('textarea[data-label]').forEach(function(ta){ta.addEventListener('input',gatherAnswers);});gatherAnswers();});
+</script>
+</body>
+</html>
